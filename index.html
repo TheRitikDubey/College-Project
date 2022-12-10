@@ -7,22 +7,94 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
   <nav>
-    <ul class="flex flex-row gap-x-28 max-[640px]:gap-x-3 max-[640px]:text-xs max-[640px]:pl-3 pl-40  p-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full">
-      <li>Home</li>
-      <li>Team</li>
-      <li>Courses</li>
-      <li>Roadmaps</li>
+    <ul class="flex flex-row gap-x-28 max-[640px]:gap-x-3 max-[640px]:text-xs max-[640px]:pl-3 pl-40 p-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white fixed w-full">
+      <li class="hover:bg-purple-500 hover:cursor-pointer p-3 rounded-lg">Home</li>
+      <li class="hover:bg-purple-500 hover:cursor-pointer p-3 rounded-lg">Team</li>
+      <li class="hover:bg-purple-500 hover:cursor-pointer p-3 rounded-lg">Courses</li>
+      <li class="hover:bg-purple-500 hover:cursor-pointer p-3 rounded-lg">Roadmaps</li>
     </ul>
   </nav> 
   <div class="Dashboard">
-    <img src="./Images/Dash_heading.jpg" alt="" class="w-screen h-screen  ">
-    <h2 class="text-yellow-300 absolute dashboard-text">Easiest way of finding the right path for you journey </h2>
+    <img src="./Images/Dash_heading.jpg" alt="" class="w-screen h-screen  max-[640px]:max-h-[35rem]">
+    <h2 class="text-yellow-300 absolute dashboard-text ml-80 max-[640px]:ml-1 max-[640px]:h-8 max-[640px]:text-sm ">Easiest way of finding the right path for you journey </h2>
   </div>
-  
+  <div class="mt-7 text-center text-xl">Trending Courses</div>
+  <div class="grid grid-cols-3 gap-4 max-[640px]:grid-cols-1 gap-5 ">
+   <!-- JS logo and script here -->
+    <div class="trending-list">
+      <div class="blog-post">
+        <div class="blog-img">
+            <img src="./Images/JS.png" class="w-60 h-72 p-4 course-logo" alt="bmw-vision">
+        </div>
+        <div class="blog-info p-4">
+            <div class="blog-mini-info">
+                <span class="text-2xl font-semibold ">JavaScript</span>
+                <span class="text-xs">Most popular programming language in the world</span>
+            </div>
+            <div class="details">
+                <p>JavaScript is the world's most popular programming language.JavaScript is the programming language of the Web.JavaScript is easy to learn.This tutorial will teach you JavaScript from basic to advanced.</p>
+            </div>
+            <button class="bg-red-500 p-1 rounded-lg hover:bg-green-500">Add to my course</button>
+            <div class="hidden-content">
+                <p>This course is added to your list <i class="fa-solid fa-bell fa-shake"></i></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- NODEJS logo and script here -->
+    <div class="trending-list">
+      <div class="blog-post">
+        <div class="blog-img">
+            <img src="./Images/NodeJS logo.png" class="w-60 h-72 p-4 course-logo" alt="bmw-vision">
+        </div>
+        <div class="blog-info p-4">
+            <div class="blog-mini-info">
+                <span class="text-2xl font-semibold ">Nodejs</span>
+                <span class="text-xs">open-source, cross-platform JavaScript runtime environment.</span>
+            </div>
+            <div class="details">
+                <p>Node.js is an open source server environment.
+
+                  Node.js allows you to run JavaScript on the server.primarily it deployed for non-blocking, event-driven servers, such as traditional web sites and back-end API services.</p>
+            </div>
+            <button class="bg-red-500 p-1 rounded-lg hover:bg-green-500">Add to my course</button>
+            <div class="hidden-content">
+                <p>This course is added to your list <i class="fa-solid fa-bell fa-shake"></i></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ReactJS logo and script here -->
+    <div class="trending-list">
+      <div class="blog-post">
+        <div class="blog-img">
+            <img src="./Images/React logo.jpg" class="w-60 h-72 p-4 course-logo" alt="bmw-vision">
+        </div>
+        <div class="blog-info p-4">
+            <div class="blog-mini-info">
+                <span class="text-2xl font-semibold ">ReactJS</span>
+                <span class="text-xs">Most Popular Forntend framework in the world</span>
+            </div>
+            <div class="details">
+                <p>React is a JavaScript library for building user interfaces.
+                  
+                  React allows us to create reusable UI components. building interactive user interfaces and web applications quickly and efficiently with significantly less code than you would with vanilla JavaScript.</p>
+            </div>
+            <button class="bg-red-500 p-1 rounded-lg hover:bg-green-500">Add to my course</button>
+            <div class="hidden-content">
+                <p>This course is added to your list <i class="fa-solid fa-bell fa-shake"></i></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <h2 class="text-center text-3xl font-medium">Intent</h2>
     
 </body>
 </html>
